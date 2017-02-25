@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DetalleContactoActivity">
+
+
+    <!-- Compartir contacto. -->
+    <item
+        android:id="@+id/action_compartir"
+        android:icon="@drawable/ic_share_black_48dp"
+        android:title="Compartir contacto"
+        app:showAsAction="always">
+
+        <!-- Submenú de compartir. -->
+        <menu>
+            <item
+                android:id="@+id/action_compartir_sms"
+                android:title="Compartir vía SMS"
+                android:icon="@drawable/ic_textsms_black_48dp"></item>
+            <item
+                android:id="@+id/action_compartir_gmail"
+                android:title="Compartir vía Gmail"
+                android:icon="@drawable/gmail_48dp"></item>
+            <item
+                android:id="@+id/action_compartir_whatsapp"
+                android:title="Compartir vía WhatsApp"
+                android:icon="@drawable/whatsapp_48dp"></item>
+            <item
+                android:id="@+id/action_compartir_twitter"
+                android:title="Compartir vía Twitter"
+                android:icon="@drawable/twitter_48dp"></item>
+        </menu>
+
+    </item>
+
+    <!-- Eliminar contacto. -->
+    <item
+        android:id="@+id/action_eliminar"
+        android:icon="@drawable/ic_delete_black_48dp"
+        android:title="Eliminar contacto"
+        app:showAsAction="always" />
+
+    <!-- Ubicar contacto. -->
+    <item
+        android:id="@+id/action_ubicar"
+        android:icon="@drawable/ic_map_black_48dp"
+        android:title="Editar contacto"
+        app:showAsAction="always">
+
+        <!-- Submenú de ubicación. -->
+        <menu>
+            <item
+                android:id="@+id/action_ubicar_localizar"
+                android:title="Ubicar contacto"
+                android:icon="@drawable/maps_48dp"></item>
+            <item
+                android:id="@+id/action_ubicar_navegar"
+                android:title="Navegar hasta el contacto"
+                android:icon="@drawable/navigation_48dp"></item>
+            <!--
+            <item
+                android:id="@+id/action_ubicar_distancia"
+                android:title="Distancia con el contacto"
+                android:icon="@drawable/ic_location_on_black_48dp"></item>
+                -->
+        </menu>
+
+    </item>
+</menu>
